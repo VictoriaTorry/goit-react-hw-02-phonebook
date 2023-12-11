@@ -2,7 +2,7 @@ import css from './ContactItem.module.css';
 
 export const ContactItem = ({ contact: { id, name, number }, onDelete }) => {
   return (
-    <li key={id} className={css.contactItem}>
+    <li className={css.contactItem}>
       <p className={css.contactName}>
         {name}: {number}
       </p>
